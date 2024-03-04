@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(313deg, #b9282f, #782a75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*   background-image: url(/sd.jpg);
+ */
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 55rem;
+  height: 27rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px #676767;
+  transition: 2s all ease-in-out;
+}
+main section,
+main section .current {
+  text-align: center;
+}
+main section .info h2 {
+  margin: 70px 40px 30px 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section .info p {
+  font-size: 55px;
+  margin: 20px 65px 80px 65px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 2px;
+}
+main section:nth-of-type(1),
+main section:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s ease-in-out;
+}
+main section:nth-of-type(1) {
+  border-radius: 10px 0 0 10px;
+}
+main section:nth-of-type(2) {
+  border-radius: 0 10px 10px 0;
+}
+main .player_0,
+main .player_1 {
+  background-color: #c15673;
+}
+main .player_active {
+  background-color: #d2a4c0;
+}
+.current {
+  background-color: #c52d56;
+}
+.player_active .current {
+  background-color: #c51c4a;
+}
+.current {
+  padding: 10px 30px;
+  width: 200px;
+  height: 95px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.current p {
+  margin: 20px;
+  font-size: 30px;
+}
+.icon_select {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_select .newgame {
+  position: absolute;
+  top: 60px;
+}
+
+.icon_select .role_hold {
+  display: flex;
+  position: absolute;
+  bottom: 25px;
+  align-items: center;
+  flex-direction: column;
+}
+.icon_select .click {
+  padding: 8px 18px;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0px #676767;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+.icon_select .click:active {
+  transform: translateY(5px);
+}
+.img_dice {
+  text-align: center;
+}
+.img_dice img {
+  border: 2px solid #fffdfd;
+  border-radius: 3px;
+  width: 90px;
+  box-shadow: 0 0 10px 0px #676767;
+}
+
+main .playerWin {
+  background-color: #1a1a1a;
+}
+main .playerWin .info h2,
+main .playerWin .score {
+  color: #ff0057;
+}
